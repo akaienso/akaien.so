@@ -1,0 +1,13 @@
+/* css/style.css */
+#ensoContainer {
+    position: relative; /* This ensures the SVGs are positioned relative to this container */
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
+    margin: 2em auto;
+    aspect-ratio: 1 / 1;;
+    overflow: hidden; /* This keeps everything contained within the bounds of the container */
+    box-sizing: border-box;
+    border: 1px solid #cc0000;
+    border-radius: 50px;
+}

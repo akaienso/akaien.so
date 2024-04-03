@@ -1,31 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Randomized Enso</title>
+    <meta charset="UTF-8">
+    <title>Akai ensō — 赤い円相</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <h1>Akai ensō — 赤い円相</h1>
+    <div id="ensoContainer"></div>
 
-<svg width="400" height="400" viewBox="0 0 400 400" id="ensoSVG">
-  <path id="ensoPath" fill="none" stroke="red" stroke-width="4" />
-</svg>
-
-<script>
-  function randomizeEnso() {
-    const variability = 20; // Increase for more randomness
-    const baseDiameter = 100;
-    const strokeWidth = Math.random() * variability + 3; // Random stroke width between 3 and variability + 3
-
-    // Create an SVG path for the Enso circle
-    // Note: This is a simplified version. For more realistic randomness, consider complex path calculations or using predefined paths.
-    const ensoPath = document.getElementById('ensoPath');
-    ensoPath.setAttribute('d', `M150,200a${baseDiameter},${baseDiameter} 0 1,0 100,0.00001`);
-    ensoPath.setAttribute('stroke-width', strokeWidth);
-  }
-
-  // Randomize the Enso on load
-  window.onload = randomizeEnso;
-</script>
-
+    <script src="js/script.js" type="module"></script>
 </body>
+
 </html>
