@@ -1,13 +1,37 @@
 /* css/style.css */
+body {
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+    margin: 0;
+    background-color: #500000;
+}
+h1 {
+    font-size: 2.5em;
+    background-color: rgba(145, 145, 145, 0.301);
+    color: #ffffff;
+    transform: rotate(-90deg);
+    padding: 2em;
+    width: 100vh;
+    text-align: right;
+    
+    position: absolute;
+    left: -30em; /* Adjust this value */
+    bottom: 100vh; /* Use vh to align it based on the viewport height */
+    transform-origin: right bottom; /* Adjusted to right bottom */
+    
+    white-space: nowrap;
+    margin: 0;
+}
 #ensoContainer {
     position: relative; /* This ensures the SVGs are positioned relative to this container */
     width: 100%;
     height: auto;
-    max-width: 1100px;
-    margin: 2em auto;
-    aspect-ratio: 1 / 1;;
+ 
+    max-width: 60vh;
+    margin: 4em auto;
+    aspect-ratio: 1 / 1;
     overflow: hidden; /* This keeps everything contained within the bounds of the container */
     box-sizing: border-box;
     border: 1px solid #cc0000;
     border-radius: 50px;
+    background-color: #ffffff;
 }
